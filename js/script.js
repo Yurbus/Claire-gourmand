@@ -29,7 +29,7 @@
 
 // Меню бурнер
 const iconMenu = document.querySelector('.menu__icon');
-const menuBody = document.querySelector('.header__menu');
+const menuBody = document.querySelector('.header__right');
 if (iconMenu) {
 	iconMenu.addEventListener("click", function (e) {
 		document.body.classList.toggle('_lock');

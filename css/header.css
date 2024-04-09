@@ -9,6 +9,7 @@
   background: #ffffff;
   padding: 10px 0;
   z-index: 3;
+  overflow-x: hidden;
 }
 
 .header__body {
@@ -109,7 +110,6 @@
 form {
   width: auto;
   float: right;
-  margin-right: 30px;
   position: relative;
 }
 
@@ -221,21 +221,25 @@ button::before {
     width: 24px;
     transform: rotate(45deg) translate(0px, -50%);
   }
+  .header__right {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: all 0.3s ease 0s;
+    background: #ffffff;
+    height: 100vh;
+    text-align: center;
+  }
   .header__menu {
     display: flex;
     flex-direction: column;
     justify-content: flex-start !important;
-    position: absolute;
-    background: #ffffff;
-    top: 0;
-    right: 0;
-    width: 70%;
-    height: 100vh;
-    text-align: center;
-    padding: 140px 25px 0;
-    transform: translateX(100%);
-    visibility: hidden;
-    transition: all 0.3s ease 0s;
+    padding: 30px 25px 0;
   }
   .header__menu .menu__list {
     display: flex;
@@ -249,6 +253,7 @@ button::before {
   }
   .header__menu .menu__list .menu__link a {
     color: #000;
+    font-size: 20px;
   }
   .header__menu .menu__list .menu__link :not(:last-child) {
     margin-bottom: 32px;
