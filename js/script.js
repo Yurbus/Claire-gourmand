@@ -39,6 +39,35 @@ if (iconMenu) {
 }
 
 // -----------------------------------------------------------
+
+ // Функция для прокрутки страницы вверх
+ function scrollToTop() {
+    // Прокручиваем страницу в начало с плавной анимацией
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// Получаем кнопку для прокрутки вверх
+var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// Добавляем обработчик события клика на кнопку
+scrollToTopBtn.addEventListener("click", scrollToTop);
+
+// Отслеживаем прокрутку страницы
+window.onscroll = function() {
+    // Если прокрутка больше 500px, показываем кнопку, иначе скрываем
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+};
+
+
+
+// -----------------------------------------------------------
 // Получаем элемент липкого меню
 // const stickyMenu = document.getElementById('stickyMenu');
 
