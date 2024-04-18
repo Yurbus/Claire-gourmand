@@ -106,56 +106,26 @@
   display: block;
 }
 
-/*search*/
-form {
-  width: auto;
-  float: right;
-  position: relative;
-}
-
-input {
+/*----- search -----*/
+.header__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 136px;
   height: 42px;
-  padding-left: 15px;
+  padding: 15px;
   border-radius: 42px;
   background: #AD1F34;
+}
+
+.searsh_popup {
   font-size: 14px;
   color: #fff;
-  outline: none;
-  border: none;
-  position: relative;
-  transition: 0.3s linear;
 }
-
-input::-moz-placeholder {
-  color: #fff;
-}
-
-input::placeholder {
-  color: #fff;
-}
-
-input:focus {
-  width: 180px;
-}
-
-button {
-  width: 42px;
-  height: 42px;
-  background: none;
-  border: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-button::before {
-  content: "";
-  position: absolute;
-  background: url("../img/search.svg") center/cover no-repeat;
+.searsh_popup img {
   width: 12px;
   height: 12px;
-  right: 22px;
-  top: 14px;
+  margin-left: 14px;
 }
 
 /*=========================================================================================*/
