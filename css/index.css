@@ -153,16 +153,16 @@ body.lock {
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
   }
-  article:first-child {
+  .latest-posts__wrapp article:first-child {
     grid-area: 1/1/3/3;
   }
-  article:nth-last-child(-n+4) .wp-post-image {
+  .latest-posts__wrapp article:nth-last-child(-n+4) .wp-post-image {
     max-height: 193px;
   }
-  article:nth-last-child(-n+4) .entry-title a {
+  .latest-posts__wrapp article:nth-last-child(-n+4) .entry-title a {
     font-size: 18px;
   }
-  article:nth-last-child(-n+4) .entry-excerpt p {
+  .latest-posts__wrapp article:nth-last-child(-n+4) .entry-excerpt p {
     font-size: 14px;
     line-height: 120%;
   }

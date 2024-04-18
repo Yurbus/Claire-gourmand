@@ -148,7 +148,7 @@
 .form__search {
   max-width: 1030px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .input__search {
@@ -164,7 +164,7 @@
   width: 100%;
 }
 .input__search input[type=text] {
-  padding: 15px 25px;
+  padding: 15px 20px;
 }
 
 .search__button {
@@ -173,14 +173,30 @@
   justify-content: center;
 }
 .search__button .searsh_popup {
-  width: 126px;
+  width: 112px;
   height: 40px;
   border-radius: 42px;
-  font-size: 16px;
+  font-size: 14px;
   background: #AD1F34;
-  margin-left: -160px;
+  margin-left: -140px;
   border: none;
   cursor: pointer;
+}
+
+.views-summary {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.views-summary li {
+  padding: 12px 14px;
+  border-radius: 42px;
+  font-size: 14px;
+  background: #AD1F34;
+  margin: 5px;
+}
+.views-summary li a {
+  color: #fff;
 }
 
 /*=========================================================================================*/

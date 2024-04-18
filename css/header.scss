@@ -158,7 +158,7 @@
 .form__search {
 	max-width: 1030px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 15px;
 }
 .input__search {
 	display: flex;
@@ -173,7 +173,7 @@
 	
 	}
 	input[type="text"] {
-		padding: 15px 25px;
+		padding: 15px 20px;
 	}
 }
 .search__button {
@@ -181,20 +181,34 @@
 	align-items: center;
 	justify-content: center;
 	.searsh_popup {
-		width: 126px;
+		width: 112px;
 		height: 40px;
 		border-radius: 42px;
-		font-size: 16px;
+		font-size: 14px;
 		background: #AD1F34;
-		margin-left: -160px;	
+		margin-left: -140px;	
 		border: none;
 		cursor: pointer;
 	}
 }
 
 .item_search-list {
+	
 }
 .views-summary {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	li {
+		padding: 12px 14px;
+		border-radius: 42px;
+		font-size: 14px;
+		background: #AD1F34;
+		margin: 5px;
+		a {
+			color: #fff;
+		}
+	}
 }
 
 
