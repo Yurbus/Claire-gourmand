@@ -1,30 +1,30 @@
 "use script"
 
-// const isMobile = {
-//     Android: function () {
-//         return navigator.userAgent.match(/Android/i);
-//     },
-//     BlackBerry: function () {
-//         return navigator.userAgent.match(/BlackBerry/i);
-//     },
-//     iOS: function () {
-//         return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-//     },
-//     Opera: function () {
-//         return navigator.userAgent.match(/Opera Mini/i);
-//     },
-//     Windows: function () {
-//         return navigator.userAgent.match(/IEMobile/i);
-//     },
-//     any: function () {
-//         return (
-//             isMobile.Android() ||
-//             isMobile.BlackBerry() ||
-//             isMobile.iOS() ||
-//             isMobile.Opera() ||
-//             isMobile.Windows());
-//     }
-// };
+const isMobile = {
+    Android: function () {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function () {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function () {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function () {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function () {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function () {
+        return (
+            isMobile.Android() ||
+            isMobile.BlackBerry() ||
+            isMobile.iOS() ||
+            isMobile.Opera() ||
+            isMobile.Windows());
+    }
+};
 
 
 // Меню бурнер
@@ -37,6 +37,25 @@ if (iconMenu) {
 		menuBody.classList.toggle('_active');
 	});
 }
+
+// -----------------------------------------------------------
+// Получаем элемент липкого меню
+// const stickyMenu = document.getElementById('stickyMenu');
+
+// // Получаем позицию меню относительно верхней границы страницы
+// const stickyMenuOffset = stickyMenu.offsetTop;
+
+// // Функция для добавления класса при прокрутке
+// function handleScroll() {
+//     if (window.pageYOffset >= stickyMenuOffset) {
+//         stickyMenu.classList.add('sticky');
+//     } else {
+//         stickyMenu.classList.remove('sticky');
+//     }
+// }
+// // Слушаем событие прокрутки и вызываем функцию handleScroll
+// window.addEventListener('scroll', handleScroll);
+
 
 // Прокрутка при клике
 // const menuLinks = document.querySelectorAll('.menu__link[data-goto]');

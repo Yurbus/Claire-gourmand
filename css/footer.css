@@ -2,11 +2,85 @@
 /*------------ Footer style --------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------*/
 .footer {
-  background: #bdbdbd;
-  height: 300px;
-  width: 100%;
+  margin-top: 30px;
+}
+
+.footer__container {
+  border-top: 2px solid #AD1F34;
+}
+
+.footer__body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+.logo__link {
+  display: block;
+  max-width: 190px;
+}
+
+.footer-categories h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.09px;
+  text-align: left;
+  color: #000;
+}
+.footer-categories ul {
+  margin-top: 18px;
+}
+.footer-categories ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
+}
+
+.footer-contacts h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.09px;
+  text-align: left;
+  color: #000;
+}
+.footer-contacts ul {
+  margin-top: 18px;
+}
+.footer-contacts ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
+}
+.footer-contacts ul li:last-child a {
+  margin-right: 10px;
 }
 
 /*=========================================================================================*/
 /*---------------------------- Media queries ----------------------------------------------*/
-/*=========================================================================================*//*# sourceMappingURL=footer.css.map */
+/*=========================================================================================*/
+@media screen and (max-width: 768.98px) {
+  .footer__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 440.98px) {
+  .footer__body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .footer-widget {
+    padding: 0 10px;
+  }
+}/*# sourceMappingURL=footer.css.map */

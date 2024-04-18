@@ -182,7 +182,7 @@ body.lock {
   transition: all 1s ease 0s;
 }
 .wp-post-image:hover {
-  transform: rotate(1deg) scale(1.05);
+  transform: rotate(1deg) scale(1.1);
 }
 
 .entry-title {

@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <!-- <link rel="stylesheet" href="css/popups.css">
-    <link rel="stylesheet" href="css/slick.css"> -->
+    <link rel="stylesheet" href="css/popups.css">
+    <!-- <link rel="stylesheet" href="css/slick.css"> -->
 
 
 </head>
@@ -20,7 +20,7 @@
     <div class="wrapper">
 
         <!--------- Header ------------>
-        <header class="header">
+        <header class="header" id="stickyMenu">
             <div class="header__container">
                 <div class="header__body">
                     <div class="header__logo">
@@ -40,7 +40,7 @@
                                 <li id="menu-item-38-en" class="lang-item lang-item-fr"><a href=""><span class="nav-link-text"><img src="img/flag_gb.svg" alt="Eng">Eng</span></a></li> 
                             </ul> 
                             <div class="header__button">
-                                <a href="" class="searsh_popup">Поиск<img src="img/search.svg" alt=""></a>
+                                <a id="#popup" href="#popup" class="popup-link searsh_popup">Поиск<img src="img/search.svg" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -184,60 +184,87 @@
 
         <!--------- Footer ------------>
         <footer class="footer">
-
+            <div class="footer__container">
+                <div class="footer__body">
+                    <div class="footer-logo">
+                        <a class="logo__link" href=""><img src="img/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="footer-widget footer-categories">
+                        <h4>Гурман News & CO</h4>
+                        <ul>
+                            <li><a href="">cолёное</a></li>
+                            <li><a href="">сладкое</a></li>
+                            <li><a href="">Аперо</a></li>
+                            <li><a href="">вино</a></li>
+                            <li><a href="">сыр</a></li>
+                            <li><a href="">другое</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget footer-categories">
+                        <h4>Места и Люди</h4>
+                        <ul>
+                            <li><a href="">Франция</a></li>
+                            <li><a href="">Марокко</a></li>
+                            <li><a href="">Габон и Ко</a></li>
+                            <li><a href="">Тунис</a></li>
+                            <li><a href="">Европа</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget footer-contacts">
+                        <h4>Обратная связь</h4>
+                        <ul>
+                            <li><span>Email:</span><a href="">claire@claire-gourmand.com</a></li>
+                            <li><a href=""><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                                <circle cx="10" cy="10" r="3.3"></circle>
+                                    <path d="M14.2,0H5.8C2.6,0,0,2.6,0,5.8v8.3C0,17.4,2.6,20,5.8,20h8.3c3.2,0,5.8-2.6,5.8-5.8V5.8C20,2.6,17.4,0,14.2,0zM10,15c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S12.8,15,10,15z M15.8,5C15.4,5,15,4.6,15,4.2s0.4-0.8,0.8-0.8s0.8,0.4,0.8,0.8S16.3,5,15.8,5z"></path>
+                                    </svg>
+                                </a>
+                                <a href=""><svg width="20px" height="20px" viewBox="0 0 20 20" aria-hidden="true">
+                                    <path d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 
-    <!-- <div id="popup" class="popup">
+    <div id="popup" class="popup">
         <div class="popup__body">
             <div class="popup__content">
-                <a href="#" class="popup__close close-popup"><img src="img/close.svg" alt="close"></a>
-                <form action="" id="form" method="POST" class="form__body">
-                    <h4 class="form__title">Order form</h4>
-                    <p class="form__sub-title">Please enter correct data!</p>
-                    <div class="form__wrapper">
-                        <div class="form__item">
-                            <label for="link">Your link:</label>
-                            <input type="text" id="link" name="Your link" class="form__input input-form" placeholder="Your link:">
+                <a href="#" class="popup__close close-popup">x</a>
+                <form action="" class="form__search">
+                    <div class="input__search">
+                        <input type="text" id="filter" placeholder="Например: Гастрономия" />
+                        <div class="search__button">
+                            <button type="submit" class="searsh_popup">Поиск<img src="img/search.svg" alt=""></button>
                         </div>
-                        
-                        <div class="form__group">
-                            <div class="form__item">
-                                <label for="linkk">IDR price:</label>
-                                <input type="text" id="linkk" name="IDR price" class="form__input input-form" placeholder="IDR price">
-                            </div>
-                            <div class="form__item">
-                                <label for="link3">Quantity:</label>
-                                <input type="text" id="link3" name="Quantity" class="form__input input-form" placeholder="1">
-                            </div>
-                        </div>
-                        
-                        <div class="form__item">
-                            <label for="link4">Adress to delivery:</label>
-                            <input type="text" id="link4" name="Adress" class="form__input input-form" placeholder="Adress">
-                        </div>
-                        <div class="form__item">
-                            <label for="link5">Note:</label>
-                            <textarea name="" id="link5" rows="6" placeholder="Specify delivery details"></textarea>
-                        </div>
-
-                        <div class="form__item">
-                            <label for="link9">Email:</label>
-                            <input type="text" id="link9" name="Email" class="form__input input-form" placeholder="Email ">
-                        </div>
-                        <button type="submit" class="submit">Buy now</button>
+                    </div>
+                    <div class="item_search-list">
+                        <ul class="views-summary">
+                            <li><a href="#">Кулинария</a></li>
+                            <li><a href="#">Путешевствия</a></li>
+                            <li><a href="#">Развитие</a></li>
+                            <li><a href="#">Интересы</a></li>
+                            <li><a href="#">Увлечения</a></li>
+                            <li><a href="#">Майонез</a></li>
+                            <li><a href="#">Калифорния</a></li>
+                            <li><a href="#">Места и люди</a></li>
+                        </ul>
                     </div>
                 </form>
             </div>
         </div>
-    </div> -->
+    </div>
 
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
-    <!-- <script src="js/popups.js"></script>
-    <script src="js/slick.js"></script>
+    <script src="js/popups.js"></script>
+    <!-- <script src="js/slick.js"></script>
     <script src="js/slider.js"></script> -->
 </body>
 </html>
