@@ -60,27 +60,11 @@ body.lock {
 .page {
 	flex: 1 1 auto;
 }
-/*--------------------------------------*/
-/*--------- Bg style -------------------*/
-/*--------------------------------------*/
 
-// .ibg {
-// 	position: absolute;
-// 	top: 0;
-// 	left: 0;
-// 	width: 100%;
-// 	height: 100%;
-// 	img {
-// 		object-fit: cover;
-// 		height: 850px;
-// 	}
-// }
 
 /*---------------------------------------------------------------------------------------*/
-/*------------ Main style ---------------------------------------------------------------*/
+/*------------ Main page style ----------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
-
-
 
 .category__items {
 	display: grid;
@@ -143,7 +127,6 @@ body.lock {
 	}
 }
 
-/*-------------------- Последние добавления ---------------------------------*/
 .latest_adds {
 	margin-top: 100px;
 }
@@ -225,10 +208,6 @@ body.lock {
 	line-height: 19.6px;
 	color: #AD1F34;
 }
-
-
-
-
 .post__item {
 	margin-bottom: 20px;
 	color: #000000;
@@ -238,7 +217,7 @@ body.lock {
 			color: #AD1F34;
 		}
 		img {
-			transform: scale(1.1) rotate(3deg);
+			transform: scale(1.5) rotate(2deg);
 		}
 	}
 }
@@ -263,7 +242,113 @@ body.lock {
 	line-height: 140%; /* 25.2px/18 */
 }
 
+/*---------------------------------------------------------------------------------------*/
+/*------------ Gurman page style --------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
 
+
+.gurman_adds__body {
+	margin-top: 50px;
+}
+.gurman_adds__title {
+	font-size: clamp(24px, 4vw, 44px);
+	font-weight: 600;
+	margin-bottom: 24px;
+	text-align: center;
+}
+.entries {
+}
+
+@media screen and (min-width:960px) {
+	.gurman-posts__wrapp {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 20px;
+	}
+	.gurman-posts__wrapp article:first-child{
+		grid-area: 1 / 1 / 3 / 3;
+	} 
+	.gurman-posts__wrapp article:nth-last-child(-n+4){
+		.wp-post-image {
+			max-height: 193px;
+		}
+		.entry-title a {
+			font-size: 18px;
+		}
+		.entry-excerpt p {
+			font-size: 14px;
+			line-height: 120%;
+		}
+	} 
+}
+.sub-cat_adds {
+	margin-top: 60px;
+}
+.sub-cat_adds__title {
+	font-size: clamp(24px, 4vw, 44px);
+	font-weight: 700;
+	line-height: 52.51px;
+	text-align: left;
+	margin-bottom: 44px;
+}
+.sub-cat-posts__wrapp {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+}
+.sub-cat-posts__wrapp{
+	.wp-post-image {
+		max-height: 193px;
+	}
+	.entry-title a {
+		font-size: 18px;
+	}
+	.entry-excerpt p {
+		font-size: 14px;
+		line-height: 120%;
+	}
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*------------ Travel page style --------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+
+.travel_adds__body {
+	margin-top: 50px;
+}
+.travel_adds__title {
+	font-size: clamp(24px, 4vw, 44px);
+	font-weight: 600;
+	margin-bottom: 24px;
+	text-align: center;
+}
+.entries {
+}
+
+@media screen and (min-width:960px) {
+	.travel-posts__wrapp {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 20px;
+	}
+	.travel-posts__wrapp article:first-child{
+		grid-area: 1 / 1 / 3 / 3;
+	} 
+	.travel-posts__wrapp article:nth-last-child(-n+4){
+		.wp-post-image {
+			max-height: 193px;
+		}
+		.entry-title a {
+			font-size: 18px;
+		}
+		.entry-excerpt p {
+			font-size: 14px;
+			line-height: 120%;
+		}
+	} 
+}
 
 
 /*=========================================================================================*/
@@ -278,8 +363,11 @@ body.lock {
 		grid-template-columns: repeat(2, 1fr);
 		gap: 20px;
 	}
-
-
+	.sub-cat-posts__wrapp {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
 }
 @media screen and (max-width: 860.98px) {
 	.category__items {
@@ -293,6 +381,11 @@ body.lock {
 	}
 	.post__title {
 		margin-bottom: 0;
+	}
+	.sub-cat-posts__wrapp {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
 	}
 }
 @media screen and (max-width: 559.98px) {
@@ -314,5 +407,13 @@ body.lock {
 	}
 	.post__title {
 		margin-bottom: 0px;
+	}
+	.sub-cat_adds__title {
+		margin-bottom: 15px;
+	}
+	.sub-cat-posts__wrapp {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 20px;
 	}
 }

@@ -39,6 +39,12 @@
   line-height: 16.94px;
   text-align: left;
 }
+.footer-categories ul li a {
+  color: #000;
+}
+.footer-categories ul li a:hover {
+  color: #AD1F34;
+}
 
 .footer-contacts h4 {
   font-size: 16px;

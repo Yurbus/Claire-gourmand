@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -73,11 +72,8 @@ body.lock {
   flex: 1 1 auto;
 }
 
-/*--------------------------------------*/
-/*--------- Bg style -------------------*/
-/*--------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
-/*------------ Main style ---------------------------------------------------------------*/
+/*------------ Main page style ----------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
 .category__items {
   display: grid;
@@ -135,7 +131,6 @@ body.lock {
   background: #bd2239;
 }
 
-/*-------------------- Последние добавления ---------------------------------*/
 .latest_adds {
   margin-top: 100px;
 }
@@ -224,7 +219,7 @@ body.lock {
   color: #AD1F34;
 }
 .post__item:hover img {
-  transform: scale(1.1) rotate(3deg);
+  transform: scale(1.5) rotate(2deg);
 }
 
 .post__title {
@@ -250,6 +245,105 @@ body.lock {
   line-height: 140%; /* 25.2px/18 */
 }
 
+/*---------------------------------------------------------------------------------------*/
+/*------------ Gurman page style --------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+.gurman_adds__body {
+  margin-top: 50px;
+}
+
+.gurman_adds__title {
+  font-size: clamp(24px, 4vw, 44px);
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+@media screen and (min-width: 960px) {
+  .gurman-posts__wrapp {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .gurman-posts__wrapp article:first-child {
+    grid-area: 1/1/3/3;
+  }
+  .gurman-posts__wrapp article:nth-last-child(-n+4) .wp-post-image {
+    max-height: 193px;
+  }
+  .gurman-posts__wrapp article:nth-last-child(-n+4) .entry-title a {
+    font-size: 18px;
+  }
+  .gurman-posts__wrapp article:nth-last-child(-n+4) .entry-excerpt p {
+    font-size: 14px;
+    line-height: 120%;
+  }
+}
+.sub-cat_adds {
+  margin-top: 60px;
+}
+
+.sub-cat_adds__title {
+  font-size: clamp(24px, 4vw, 44px);
+  font-weight: 700;
+  line-height: 52.51px;
+  text-align: left;
+  margin-bottom: 44px;
+}
+
+.sub-cat-posts__wrapp {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.sub-cat-posts__wrapp .wp-post-image {
+  max-height: 193px;
+}
+.sub-cat-posts__wrapp .entry-title a {
+  font-size: 18px;
+}
+.sub-cat-posts__wrapp .entry-excerpt p {
+  font-size: 14px;
+  line-height: 120%;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*------------ Travel page style --------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+.travel_adds__body {
+  margin-top: 50px;
+}
+
+.travel_adds__title {
+  font-size: clamp(24px, 4vw, 44px);
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+@media screen and (min-width: 960px) {
+  .travel-posts__wrapp {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .travel-posts__wrapp article:first-child {
+    grid-area: 1/1/3/3;
+  }
+  .travel-posts__wrapp article:nth-last-child(-n+4) .wp-post-image {
+    max-height: 193px;
+  }
+  .travel-posts__wrapp article:nth-last-child(-n+4) .entry-title a {
+    font-size: 18px;
+  }
+  .travel-posts__wrapp article:nth-last-child(-n+4) .entry-excerpt p {
+    font-size: 14px;
+    line-height: 120%;
+  }
+}
 /*=========================================================================================*/
 /*---------------------------- Media queries ----------------------------------------------*/
 /*=========================================================================================*/
@@ -260,6 +354,11 @@ body.lock {
   .latest-posts__wrapp {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .sub-cat-posts__wrapp {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 }
@@ -276,6 +375,11 @@ body.lock {
   .post__title {
     margin-bottom: 0;
   }
+  .sub-cat-posts__wrapp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 }
 @media screen and (max-width: 415.98px) {
   .category__item a img {
@@ -286,5 +390,13 @@ body.lock {
   }
   .post__title {
     margin-bottom: 0px;
+  }
+  .sub-cat_adds__title {
+    margin-bottom: 15px;
+  }
+  .sub-cat-posts__wrapp {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }/*# sourceMappingURL=index.css.map */

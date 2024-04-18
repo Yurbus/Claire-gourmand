@@ -66,7 +66,6 @@ window.onscroll = function() {
 };
 
 
-
 // -----------------------------------------------------------
 // Получаем элемент липкого меню
 // const stickyMenu = document.getElementById('stickyMenu');
