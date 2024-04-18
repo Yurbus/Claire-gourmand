@@ -172,10 +172,13 @@
 		height: 64px;
 		border-radius: 35px;
 		width: 100%;
-	
 	}
 	input[type="text"] {
 		padding: 15px 20px;
+		font-size: 16px;
+	}
+	input::placeholder {
+		color: #B2B0B0;
 	}
 }
 .search__button {
@@ -331,4 +334,11 @@
 		transform: translateX(0);
 	}
 
+}
+
+
+@media screen and (max-width:390.98px) {
+	.header__right {
+		width: 75%;
+	}
 }
