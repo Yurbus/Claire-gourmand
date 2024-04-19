@@ -163,6 +163,7 @@ body.lock {
   }
   .latest-posts__wrapp article:nth-last-child(-n+4) .ct-meta-element-date {
     font-size: 12px;
+    margin-bottom: 12px;
   }
 }
 .boundless-image {
@@ -284,6 +285,7 @@ body.lock {
   }
   .gurman-posts__wrapp article:nth-last-child(-n+4) .ct-meta-element-date {
     font-size: 12px;
+    margin-bottom: 12px;
   }
 }
 .sub-cat_adds {
@@ -566,6 +568,9 @@ body.lock {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+  }
+  .meta-date {
+    margin-bottom: 12px;
   }
 }
 @media screen and (max-width: 860.98px) {

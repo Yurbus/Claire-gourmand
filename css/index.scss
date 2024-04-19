@@ -160,6 +160,7 @@ body.lock {
 		}
 		.ct-meta-element-date {
 			font-size: 12px;
+			margin-bottom: 12px;
 		}
 	} 
 }
@@ -285,6 +286,7 @@ body.lock {
 		}
 		.ct-meta-element-date {
 			font-size: 12px;
+			margin-bottom: 12px;
 		}
 	} 
 }
@@ -582,6 +584,9 @@ body.lock {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 20px;
+	}
+	.meta-date {
+		margin-bottom: 12px;
 	}
 }
 @media screen and (max-width: 860.98px) {
