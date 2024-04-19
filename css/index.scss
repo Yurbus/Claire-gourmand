@@ -158,6 +158,9 @@ body.lock {
 			font-size: 14px;
 			line-height: 120%;
 		}
+		.ct-meta-element-date {
+			font-size: 12px;
+		}
 	} 
 }
 .boundless-image {
@@ -280,6 +283,9 @@ body.lock {
 			font-size: 14px;
 			line-height: 120%;
 		}
+		.ct-meta-element-date {
+			font-size: 12px;
+		}
 	} 
 }
 .sub-cat_adds {
@@ -307,6 +313,9 @@ body.lock {
 	.entry-excerpt p {
 		font-size: 14px;
 		line-height: 120%;
+	}
+	.ct-meta-element-date {
+		font-size: 12px;
 	}
 }
 
@@ -346,6 +355,9 @@ body.lock {
 		.entry-excerpt p {
 			font-size: 14px;
 			line-height: 120%;
+		}
+		.ct-meta-element-date {
+			font-size: 12px;
 		}
 	} 
 }
@@ -400,6 +412,9 @@ body.lock {
 			font-size: 14px;
 			line-height: 120%;
 		}
+		.ct-meta-element-date {
+			font-size: 12px;
+		}
 	} 
 }
 
@@ -425,19 +440,20 @@ body.lock {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 20px;
+	article {
+		.wp-post-image {
+			max-height: 193px;
+		}
+		.entry-title a {
+			font-size: 18px;
+		}
+		.entry-excerpt p {
+			font-size: 14px;
+			line-height: 120%;
+		}
+	} 
 }
-article {
-	.wp-post-image {
-		max-height: 193px;
-	}
-	.entry-title a {
-		font-size: 18px;
-	}
-	.entry-excerpt p {
-		font-size: 14px;
-		line-height: 120%;
-	}
-} 
+
 
 /*---------------------------------------------------------------------------------------*/
 /*------------ Single post style --------------------------------------------------------*/
@@ -449,14 +465,15 @@ article {
 	display: flex;
 	justify-content: flex-start;
 }
-.post__title {
+.single-post__title {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 24px;
+	margin-bottom: 24px;
 	.title-post {
-		font-size: 32px;
+		font-size: clamp(22px, 4vw, 32px);
 		font-weight: 700;
-		line-height: 38.19px;
+		line-height: 120%;
 	}
 	.meta-data {
 		font-size: 12px;
@@ -471,7 +488,11 @@ article {
 }
 .type-post {
 	.entry-content {
-		
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 25.2px;
+		color: #7A7A7A;
+
 	}
 }
 

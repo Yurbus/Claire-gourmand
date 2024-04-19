@@ -161,6 +161,9 @@ body.lock {
     font-size: 14px;
     line-height: 120%;
   }
+  .latest-posts__wrapp article:nth-last-child(-n+4) .ct-meta-element-date {
+    font-size: 12px;
+  }
 }
 .boundless-image {
   overflow: hidden;
@@ -279,6 +282,9 @@ body.lock {
     font-size: 14px;
     line-height: 120%;
   }
+  .gurman-posts__wrapp article:nth-last-child(-n+4) .ct-meta-element-date {
+    font-size: 12px;
+  }
 }
 .sub-cat_adds {
   margin-top: 60px;
@@ -307,6 +313,9 @@ body.lock {
 .sub-cat-posts__wrapp .entry-excerpt p {
   font-size: 14px;
   line-height: 120%;
+}
+.sub-cat-posts__wrapp .ct-meta-element-date {
+  font-size: 12px;
 }
 
 /*---------------------------------------------------------------------------------------*/
@@ -342,6 +351,9 @@ body.lock {
   .travel-posts__wrapp article:nth-last-child(-n+4) .entry-excerpt p {
     font-size: 14px;
     line-height: 120%;
+  }
+  .travel-posts__wrapp article:nth-last-child(-n+4) .ct-meta-element-date {
+    font-size: 12px;
   }
 }
 /*---------------------------------------------------------------------------------------*/
@@ -395,6 +407,9 @@ body.lock {
     font-size: 14px;
     line-height: 120%;
   }
+  .cat-page-posts__wrapp article:nth-last-child(-n+4) .ct-meta-element-date {
+    font-size: 12px;
+  }
 }
 /*---------------------------------------------------------------------------------------*/
 /*------------ Search page style --------------------------------------------------------*/
@@ -422,14 +437,13 @@ body.lock {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
-
-article .wp-post-image {
+.search-posts__wrapp article .wp-post-image {
   max-height: 193px;
 }
-article .entry-title a {
+.search-posts__wrapp article .entry-title a {
   font-size: 18px;
 }
-article .entry-excerpt p {
+.search-posts__wrapp article .entry-excerpt p {
   font-size: 14px;
   line-height: 120%;
 }
@@ -446,17 +460,18 @@ article .entry-excerpt p {
   justify-content: flex-start;
 }
 
-.post__title {
+.single-post__title {
   display: flex;
   justify-content: space-between;
   margin-top: 24px;
+  margin-bottom: 24px;
 }
-.post__title .title-post {
-  font-size: 32px;
+.single-post__title .title-post {
+  font-size: clamp(22px, 4vw, 32px);
   font-weight: 700;
-  line-height: 38.19px;
+  line-height: 120%;
 }
-.post__title .meta-data {
+.single-post__title .meta-data {
   font-size: 12px;
   font-weight: 510;
   line-height: 14.32px;
@@ -466,6 +481,13 @@ article .entry-excerpt p {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+}
+
+.type-post .entry-content {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  color: #7A7A7A;
 }
 
 .sidebar {
